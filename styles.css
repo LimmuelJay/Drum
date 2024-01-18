@@ -1,6 +1,17 @@
 body {
   text-align: center;
   background-color: #283149;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.set {
+  height: 200px;
+  width: 100%;
 }
 
 h1 {
@@ -8,12 +19,17 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
+  height: 10px;
+  padding: 5% 0  0 0;
 
 }
 
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
+  height: 20px;
+  width: 100%;
+
 }
 
 .w {
@@ -78,4 +94,16 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+@media (max-width: 700px) {
+  body {
+    row-gap: 100px;
+    background-color: red;
+  }
+  h1 {
+    padding: 20% 0 0 0;
+  }
+  set {
+    width: 70%;
+  }
 }
