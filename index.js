@@ -5,14 +5,10 @@ for (let i = 0; i < document.querySelectorAll(".drum").length; i++) {
     buttonAnimation(this.innerHTML);
     })
 }
-
 document.addEventListener("keypress", function(event) {
-
     makeSound(event.key);
     buttonAnimation(event.key);
 })
-
-
 
 const makeSound = (key) => {
     switch (key) {
@@ -53,9 +49,7 @@ const makeSound = (key) => {
 const buttonAnimation = (currentKey) => {
     const activeButton = document.querySelector(`.${currentKey}`)
     activeButton.classList.add("pressed");
-
     setTimeout(function() {
         activeButton.classList.remove("pressed")
     }, 100)
-    
 }
